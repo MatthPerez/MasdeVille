@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+.glow {
+  text-align: center;
+  background: #ffffff;
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+}
+
+.glow:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(0.9) translateZ(0);
+          transform: scale(0.9) translateZ(0);
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+  background: -webkit-gradient(linear, right top, left top, from(#ff5770), color-stop(#e4428d), color-stop(#c42da8), color-stop(#9e16c3), color-stop(#6501de), color-stop(#9e16c3), color-stop(#c42da8), color-stop(#e4428d), to(#ff5770));
+  background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+  background-size: 200% 200%;
+  -webkit-animation: animateGlow 1.25s linear infinite;
+          animation: animateGlow 1.25s linear infinite;
+}
+
+@-webkit-keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background: #1d1f20;
+}
+
+#box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+  height: 200px;
+  color: white;
+  font-family: "Raleway";
+  font-size: 2.5rem;
+}
+
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1d1f20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*# sourceMappingURL=underglow.css.map */

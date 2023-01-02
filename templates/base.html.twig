@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/parts.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
+        <meta charset="UTF-8">
+        <meta property="og:title" content="Mas de Ville">
+        <meta property="og:site_name" content="Assemblée de Nîmes Mas de Ville">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="{{ asset('books.png') }}">
+
+        {% block nav %}
+            <div class="nav">
+            <span>Accueil</span>
+            
+            <span>
+                <ul>
+                    <li>Réunion<br>semaine</li>
+                    <li>Réunion<br>weekend</li>
+                    <li>Prédication</li>
+                </ul>
+            </span>
+            </div>
+        {% endblock %}
+        
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('menu.js') }}
+        {% endblock %}
+    </head>
+
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+
+    <footer>
+        {% block footer %}
+            <a href=""><img src="{{ asset('medias/icons/person.svg') }}" alt="icone1"></a>
+            <a href=""><img src="{{ asset('medias/icons/list-ul.svg') }}" alt="icone2"></a>
+            <span>{{ "now" | date("l d/m/Y") }}</span>
+        {% endblock %}
+    </footer>
+</html>

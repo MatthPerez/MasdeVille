@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Mas de Ville
+{% endblock %}
+
+{% block body %}
+	<main class="bg-jw{{ (date() | date('m'))+0 }}">
+		<h1 class="neon">Tableau d'affichage de<br>Nîmes Mas de Ville</h1>
+
+		{% block communications %}
+			<div class="board">
+				<h3>Communications</h3>
+
+				{% for event in events %}
+					<div class="post">
+                        {% if event.date != null %}
+                            {{ event.date }}
+                        {% endif %}
+
+                        {{ event.content }}
+                        
+                        {% if event.link != null %}
+                            <a class="phone" href="tel:{{ event.link | phone }}">Appeler le {{ event.link | phone }}</a>
+                        {% endif %}
+                    </div>
+                    <img src="{{ asset('medias/pictures/shadow_bottom.jpg') }}" alt="bottom">
+				{% endfor %}
+			</div>
+		{% endblock %}
+
+		{% block agenda %}
+			<div class="board">
+				<h3>Agenda</h3>
+			</div>
+		{% endblock %}
+
+		{% block clean_prgm %}
+			<div class="board">
+				<h3>Programme de nettoyage après les réunions</h3>
+			</div>
+		{% endblock %}
+
+		{% block members %}
+			<div class="board">
+				<h3>Responsabilités</h3>
+
+				<table>
+					<thead>
+						<td>Nom</td>
+						<td>Statut</td>
+						<td>Groupe</td>
+					</thead>
+
+					<tbody>
+						{% for member in members %}
+							{% if member.access != null and member.firstname != 'Dév' %}
+								<tr>
+									<td>{{ member.firstname }}
+										{{ member.lastname | initial }}</td>
+									<td>{{ member.status }}</td>
+									<td>{{ member.groupName }}</td>
+								</tr>
+							{% endif %}
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		{% endblock %}
+	</main>
+{% endblock %}

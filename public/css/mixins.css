@@ -1,0 +1,64 @@
+@-webkit-keyframes slideLeft {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+@-webkit-keyframes slideDown {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0%;
+    -webkit-transform: translateY(300px);
+            transform: translateY(300px);
+  }
+}
+/*# sourceMappingURL=mixins.css.map */

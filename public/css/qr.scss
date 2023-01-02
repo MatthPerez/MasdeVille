@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input {
+  padding: 12px 20px;
+  width: 50vw;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 0;
+  background: #485696;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#qr-image {
+  display: none;
+}
+img {
+  margin-bottom: 20px;
+}
