@@ -2,11 +2,9 @@
 
 namespace App\Controller;
 
-use App\Form\MemberType;
 use App\Repository\VcmRepository;
 use App\Repository\EventsRepository;
 use App\Repository\MembersRepository;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -45,5 +43,11 @@ class MainController extends AbstractController
     public function predication(): Response
     {
         return $this->render('main/predication.html.twig');
-    }    
+    }
+    
+    #[Route('/add/member', name: 'app_add_member')]
+    public function addMember(): Response
+    {
+        return $this->render('main/addMember.html.twig');
+    } 
 }
