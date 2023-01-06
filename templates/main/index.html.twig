@@ -14,17 +14,18 @@
 
 				{% for event in events %}
 					<div class="post">
-                        {% if event.date != null %}
-                            {{ event.date }}
-                        {% endif %}
+						{% if event.date != null %}
+							{{ event.date }}
+						{% endif %}
 
-                        {{ event.content }}
-                        
-                        {% if event.link != null %}
-                            <a class="phone" href="tel:{{ event.link | phone }}">Appeler le {{ event.link | phone }}</a>
-                        {% endif %}
-                    </div>
-                    <img src="{{ asset('medias/pictures/shadow_bottom.jpg') }}" alt="bottom">
+						{{ event.content }}
+
+						{% if event.link != null %}
+							<a class="phone" href="tel:{{ event.link | phone }}">Appeler le
+								{{ event.link | phone }}</a>
+						{% endif %}
+					</div>
+					<img src="{{ asset('medias/pictures/shadow_bottom.jpg') }}" alt="bottom">
 				{% endfor %}
 			</div>
 		{% endblock %}
@@ -42,14 +43,15 @@
 		{% endblock %}
 
 		{% block members %}
-			<div class="board">
+			<div class="blackBoard">
 				<h3>Responsabilités</h3>
+
+				<a class="title_link" href="{{ path('app_add_member') }}">Ajouter un membre</a>
 
 				<table>
 					<thead>
 						<td>Nom</td>
 						<td>Statut</td>
-						<td>Groupe</td>
 					</thead>
 
 					<tbody>
@@ -58,8 +60,7 @@
 								<tr>
 									<td>{{ member.firstname }}
 										{{ member.lastname | initial }}</td>
-									<td>{{ member.status }}</td>
-									<td>{{ member.groupName }}</td>
+									<td>{{ member.status }} ({{ member.groupName }})</td>
 								</tr>
 							{% endif %}
 						{% endfor %}

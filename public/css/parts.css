@@ -90,6 +90,14 @@ main h1 {
           animation: 2s slideUp ease;
 }
 
+@media screen and (max-width: 768px) {
+  main h1 {
+    width: 60%;
+    min-width: 700px;
+    margin: 5em 0 1em 0;
+  }
+}
+
 .bg-joyaux {
   background-color: #d9d9d9;
   color: black;
@@ -278,7 +286,7 @@ main h1 {
 
 .board {
   width: 80%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 3em auto;
   height: auto;
   padding: 20px;
@@ -311,38 +319,91 @@ main h1 {
   text-align: center;
 }
 
-.board table {
+.blackBoard {
+  width: 60%;
+  max-width: 700px;
+  margin: 3em auto;
+  height: auto;
+  padding: 20px;
+  background-color: #3b3936;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 4px 10px #494949;
+          box-shadow: 2px 4px 10px #494949;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.blackBoard h1,
+.blackBoard h2,
+.blackBoard h3,
+.blackBoard h4,
+.blackBoard h5,
+.blackBoard h6 {
+  padding: 10px;
+  text-align: center;
+}
+
+.blackBoard table {
   border-collapse: collapse;
 }
 
-.board table .post-it {
-  width: 170px;
-  height: 175px;
-  -webkit-box-shadow: 2px 4px 6px #444;
-          box-shadow: 2px 4px 6px #444;
-}
-
-.board table td {
+.blackBoard table td {
   padding: 5px;
   text-align: center;
   width: 15em;
 }
 
-.board table thead tr {
-  background-color: #a2a2e7;
+.blackBoard table thead tr {
+  background-color: #696969;
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.board table tbody tr {
+.blackBoard table tbody tr {
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
 }
 
-.board table tbody tr:hover {
-  background-color: #ffffffc7;
+.blackBoard table tbody tr:hover {
+  background-color: #5a5252c7;
   -webkit-transition: 150ms all ease;
   transition: 150ms all ease;
+}
+
+@media screen and (max-width: 768px) {
+  .board,
+  .blackBoard {
+    width: 90%;
+  }
+  .board h1,
+  .board h2,
+  .board h3,
+  .blackBoard h1,
+  .blackBoard h2,
+  .blackBoard h3 {
+    font-size: 2rem;
+  }
+  .board h4,
+  .board h5,
+  .board h6,
+  .blackBoard h4,
+  .blackBoard h5,
+  .blackBoard h6 {
+    font-size: 1.5rem;
+  }
 }
 
 .services {
@@ -672,9 +733,27 @@ main h1 {
           align-items: center;
 }
 
-.nav span {
-  font-size: 1.5rem !important;
-  margin: 10px 0;
+@media screen and (max-width: 768px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav span,
+.nav a {
+  font-size: 1rem !important;
+  cursor: pointer;
+}
+
+.nav a {
+  margin: 5px 0;
+}
+
+.nav a:hover {
+  color: white;
 }
 
 .nav ul {
@@ -706,5 +785,21 @@ main h1 {
   color: white;
   -webkit-transition: 300ms all ease;
   transition: 300ms all ease;
+}
+
+.nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=parts.css.map */

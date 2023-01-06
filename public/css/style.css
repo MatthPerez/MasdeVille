@@ -1727,6 +1727,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest1 {
+  background-image: url(../medias/backgrounds/forest1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather1 {
+  background-image: url(../medias/backgrounds/weather1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river1 {
+  background-image: url(../medias/backgrounds/river1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono2 {
   background-image: url(../medias/backgrounds/sono2.jpg);
   background-size: cover;
@@ -1777,6 +1795,24 @@ html {
 
 .bg-mountain2 {
   background-image: url(../medias/backgrounds/mountain2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest2 {
+  background-image: url(../medias/backgrounds/forest2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather2 {
+  background-image: url(../medias/backgrounds/weather2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river2 {
+  background-image: url(../medias/backgrounds/river2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1835,6 +1871,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest3 {
+  background-image: url(../medias/backgrounds/forest3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather3 {
+  background-image: url(../medias/backgrounds/weather3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river3 {
+  background-image: url(../medias/backgrounds/river3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono4 {
   background-image: url(../medias/backgrounds/sono4.jpg);
   background-size: cover;
@@ -1885,6 +1939,24 @@ html {
 
 .bg-mountain4 {
   background-image: url(../medias/backgrounds/mountain4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest4 {
+  background-image: url(../medias/backgrounds/forest4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather4 {
+  background-image: url(../medias/backgrounds/weather4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river4 {
+  background-image: url(../medias/backgrounds/river4.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1943,6 +2015,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest5 {
+  background-image: url(../medias/backgrounds/forest5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather5 {
+  background-image: url(../medias/backgrounds/weather5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river5 {
+  background-image: url(../medias/backgrounds/river5.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono6 {
   background-image: url(../medias/backgrounds/sono6.jpg);
   background-size: cover;
@@ -1993,6 +2083,24 @@ html {
 
 .bg-mountain6 {
   background-image: url(../medias/backgrounds/mountain6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest6 {
+  background-image: url(../medias/backgrounds/forest6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather6 {
+  background-image: url(../medias/backgrounds/weather6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river6 {
+  background-image: url(../medias/backgrounds/river6.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2051,6 +2159,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest7 {
+  background-image: url(../medias/backgrounds/forest7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather7 {
+  background-image: url(../medias/backgrounds/weather7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river7 {
+  background-image: url(../medias/backgrounds/river7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono8 {
   background-image: url(../medias/backgrounds/sono8.jpg);
   background-size: cover;
@@ -2101,6 +2227,24 @@ html {
 
 .bg-mountain8 {
   background-image: url(../medias/backgrounds/mountain8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest8 {
+  background-image: url(../medias/backgrounds/forest8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather8 {
+  background-image: url(../medias/backgrounds/weather8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river8 {
+  background-image: url(../medias/backgrounds/river8.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2159,6 +2303,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest9 {
+  background-image: url(../medias/backgrounds/forest9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather9 {
+  background-image: url(../medias/backgrounds/weather9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river9 {
+  background-image: url(../medias/backgrounds/river9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono10 {
   background-image: url(../medias/backgrounds/sono10.jpg);
   background-size: cover;
@@ -2209,6 +2371,24 @@ html {
 
 .bg-mountain10 {
   background-image: url(../medias/backgrounds/mountain10.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest10 {
+  background-image: url(../medias/backgrounds/forest10.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather10 {
+  background-image: url(../medias/backgrounds/weather10.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river10 {
+  background-image: url(../medias/backgrounds/river10.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2267,6 +2447,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest11 {
+  background-image: url(../medias/backgrounds/forest11.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather11 {
+  background-image: url(../medias/backgrounds/weather11.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river11 {
+  background-image: url(../medias/backgrounds/river11.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono12 {
   background-image: url(../medias/backgrounds/sono12.jpg);
   background-size: cover;
@@ -2317,6 +2515,24 @@ html {
 
 .bg-mountain12 {
   background-image: url(../medias/backgrounds/mountain12.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest12 {
+  background-image: url(../medias/backgrounds/forest12.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather12 {
+  background-image: url(../medias/backgrounds/weather12.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river12 {
+  background-image: url(../medias/backgrounds/river12.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2375,6 +2591,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest13 {
+  background-image: url(../medias/backgrounds/forest13.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather13 {
+  background-image: url(../medias/backgrounds/weather13.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river13 {
+  background-image: url(../medias/backgrounds/river13.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono14 {
   background-image: url(../medias/backgrounds/sono14.jpg);
   background-size: cover;
@@ -2425,6 +2659,24 @@ html {
 
 .bg-mountain14 {
   background-image: url(../medias/backgrounds/mountain14.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest14 {
+  background-image: url(../medias/backgrounds/forest14.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather14 {
+  background-image: url(../medias/backgrounds/weather14.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river14 {
+  background-image: url(../medias/backgrounds/river14.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2483,6 +2735,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest15 {
+  background-image: url(../medias/backgrounds/forest15.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather15 {
+  background-image: url(../medias/backgrounds/weather15.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river15 {
+  background-image: url(../medias/backgrounds/river15.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono16 {
   background-image: url(../medias/backgrounds/sono16.jpg);
   background-size: cover;
@@ -2533,6 +2803,24 @@ html {
 
 .bg-mountain16 {
   background-image: url(../medias/backgrounds/mountain16.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest16 {
+  background-image: url(../medias/backgrounds/forest16.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather16 {
+  background-image: url(../medias/backgrounds/weather16.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river16 {
+  background-image: url(../medias/backgrounds/river16.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2591,6 +2879,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest17 {
+  background-image: url(../medias/backgrounds/forest17.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather17 {
+  background-image: url(../medias/backgrounds/weather17.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river17 {
+  background-image: url(../medias/backgrounds/river17.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono18 {
   background-image: url(../medias/backgrounds/sono18.jpg);
   background-size: cover;
@@ -2641,6 +2947,24 @@ html {
 
 .bg-mountain18 {
   background-image: url(../medias/backgrounds/mountain18.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest18 {
+  background-image: url(../medias/backgrounds/forest18.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather18 {
+  background-image: url(../medias/backgrounds/weather18.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river18 {
+  background-image: url(../medias/backgrounds/river18.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -2699,6 +3023,24 @@ html {
   background-attachment: fixed;
 }
 
+.bg-forest19 {
+  background-image: url(../medias/backgrounds/forest19.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather19 {
+  background-image: url(../medias/backgrounds/weather19.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river19 {
+  background-image: url(../medias/backgrounds/river19.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-sono20 {
   background-image: url(../medias/backgrounds/sono20.jpg);
   background-size: cover;
@@ -2749,6 +3091,24 @@ html {
 
 .bg-mountain20 {
   background-image: url(../medias/backgrounds/mountain20.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-forest20 {
+  background-image: url(../medias/backgrounds/forest20.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-weather20 {
+  background-image: url(../medias/backgrounds/weather20.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-river20 {
+  background-image: url(../medias/backgrounds/river20.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -60450,7 +60810,7 @@ html {
 }
 
 .phone {
-  padding: 10px;
+  padding: 2px 4px;
   margin: 5px;
   background-color: #cacaca;
   border-radius: 5px;
@@ -60459,6 +60819,13 @@ html {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.phone:hover {
+  color: black !important;
+  text-shadow: none !important;
+  background-color: #b1b1b1 !important;
 }
 
 .slideLeft {
@@ -61580,7 +61947,7 @@ legend {
   }
 }
 
-.table4 {
+.table2 {
   background-color: #f3b26292;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -61591,12 +61958,12 @@ legend {
 }
 
 @media screen and (max-width: 768px) {
-  .table4 {
+  .table2 {
     width: 90%;
   }
 }
 
-.table4 tr td {
+.table2 tr td {
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -61604,12 +61971,12 @@ legend {
   padding: 3px;
 }
 
-.table4 thead {
+.table2 thead {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
-.table4 tbody tr td {
+.table2 tbody tr td {
   background-color: #ffffff55;
   border: 1px solid black;
   -webkit-box-shadow: 2px 2px 5px #707070;
@@ -61618,29 +61985,56 @@ legend {
   transition: 300ms all ease;
 }
 
-.table4 tbody tr td:hover {
+.table2 tbody tr td:hover {
   -webkit-transition: 100ms all ease;
   transition: 100ms all ease;
   background-color: #ffffffb3;
 }
 
-.table4 tbody tr td:first-child {
+.table2 tbody tr td:first-child {
   border: 3px solid black;
   background-color: #ff000087;
   border-radius: 10px;
   font-weight: bold;
 }
 
-.table4 tbody tr td:nth-child(4) {
+.table2 tbody tr td:nth-child(4) {
   border: none;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.table4 tbody tr td:nth-child(4) img {
+.table2 tbody tr td:nth-child(4) img {
   height: 30px;
   cursor: pointer;
+}
+
+.table3 {
+  border-collapse: collapse;
+}
+
+.table3 td {
+  padding: 5px;
+  text-align: center;
+  width: 15em;
+}
+
+.table3 thead tr {
+  background-color: #a2a2e7;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table3 tbody tr {
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+}
+
+.table3 tbody tr:hover {
+  background-color: #ffffffc7;
+  -webkit-transition: 150ms all ease;
+  transition: 150ms all ease;
 }
 
 .fullTable {
@@ -61882,5 +62276,22 @@ legend {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.title_link {
+  background-color: #696969;
+  margin: 1em 0 2em 0;
+  color: #e2e2e2;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+}
+
+.title_link:hover {
+  color: inherit !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none !important;
 }
 /*# sourceMappingURL=style.css.map */

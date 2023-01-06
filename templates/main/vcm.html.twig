@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Réunions semaine
+{% endblock %}
+
+{% block body %}
+	<main class="bg-night{{ (date() | date('m'))+0 }}">
+		<h1 class="neon">Réunions semaine</h1>
+
+    {% for meeting in vcm %}
+        <p>{{ meeting.date }}</p>
+    {% endfor %}
+	</main>
+{% endblock %}
+

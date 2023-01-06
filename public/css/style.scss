@@ -442,6 +442,24 @@ $purple7: #e0c4e0;
     background-size: cover;
     background-attachment: fixed;
   }
+
+  .bg-forest#{$i} {
+    background-image: url(../medias/backgrounds/forest#{$i}.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .bg-weather#{$i} {
+    background-image: url(../medias/backgrounds/weather#{$i}.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .bg-river#{$i} {
+    background-image: url(../medias/backgrounds/river#{$i}.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }
 
 @for $i from 0 through 100 {
@@ -1526,7 +1544,7 @@ $purple7: #e0c4e0;
 }
 
 .phone {
-  padding: 10px;
+  padding: 2px 4px;
   margin: 5px;
   background-color: #cacaca;
   border-radius: 5px;
@@ -1534,6 +1552,13 @@ $purple7: #e0c4e0;
   text-decoration: none;
   color: black;
   font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: black !important;
+    text-shadow: none !important;
+    background-color: #b1b1b1 !important;
+  }
 }
 
 .slideLeft {
@@ -2238,7 +2263,7 @@ legend {
   }
 }
 
-.table4 {
+.table2 {
   background-color: #f3b26292;
   backdrop-filter: blur(10px);
   border: 3px solid black;
@@ -2297,6 +2322,33 @@ legend {
     }
   }
 }
+
+.table3 {
+    border-collapse: collapse;
+
+    td {
+      padding: 5px;
+      text-align: center;
+      width: 15em;
+    }
+
+    thead tr {
+      background-color: #a2a2e7;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    tbody {
+      tr {
+        transition: 300ms all ease;
+
+        &:hover {
+          background-color: #ffffffc7;
+          transition: 150ms all ease;
+        }
+      }
+    }
+  }
 
 .fullTable {
   width: 100%;
@@ -2479,6 +2531,21 @@ legend {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+.title_link {
+  background-color: #696969;
+  margin: 1em 0 2em 0;
+  color: #e2e2e2;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 300ms all ease;
+
+  &:hover {
+    color: inherit !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
 }
 
