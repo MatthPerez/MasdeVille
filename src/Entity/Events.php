@@ -14,8 +14,8 @@ class Events
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
-    private ?\DateTimeInterface $date = null;
+    #[ORM\Column(type: 'date')]
+    private $meeting_date = null;
 
     #[ORM\Column(length: 255)]
     private ?string $content = null;
@@ -28,14 +28,14 @@ class Events
         return $this->id;
     }
 
-    public function getDate(): ?\DateTimeInterface
+    public function getMeetingDate(): ?\DateTimeInterface
     {
-        return $this->date;
+        return $this->meeting_date;
     }
 
-    public function setDate(?\DateTimeInterface $date): self
+    public function setMeetingDate(\DateTimeInterface $meeting_date): self
     {
-        $this->date = $date;
+        $this->meeting_date = $meeting_date;
 
         return $this;
     }
@@ -63,4 +63,6 @@ class Events
 
         return $this;
     }
+
+    
 }

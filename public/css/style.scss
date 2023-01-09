@@ -1620,6 +1620,10 @@ $purple7: #e0c4e0;
   color: purple;
 }
 
+.f-lightPurple {
+  color: #c59cc5;
+}
+
 .f-larger {
   font-size: 1.5rem;
 }
@@ -1885,58 +1889,6 @@ nav {
     margin-bottom: 20px;
     text-align: center;
     color: white;
-  }
-}
-
-.vcm {
-  h2 {
-    font-size: 1.2rem;
-    margin: 3em 0 1em 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  h2,
-  div,
-  span,
-  div span {
-    font-size: 1.2rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    flex-direction: column;
-    h2,
-    div,
-    span,
-    div span {
-      font-size: 0.9rem;
-    }
-  }
-
-  div {
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.we {
-  div {
-    margin-bottom: 2em;
-
-    span:nth-child(2) {
-      color: yellow;
-    }
-  }
-
-  h3 {
-    margin-bottom: 2em;
-
-    span:nth-child(2) {
-      color: lightgreen;
-    }
   }
 }
 
@@ -2324,31 +2276,31 @@ legend {
 }
 
 .table3 {
-    border-collapse: collapse;
+  border-collapse: collapse;
 
-    td {
-      padding: 5px;
-      text-align: center;
-      width: 15em;
-    }
+  td {
+    padding: 5px;
+    text-align: center;
+    width: 15em;
+  }
 
-    thead tr {
-      background-color: #a2a2e7;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+  thead tr {
+    background-color: #a2a2e7;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-    tbody {
-      tr {
-        transition: 300ms all ease;
+  tbody {
+    tr {
+      transition: 300ms all ease;
 
-        &:hover {
-          background-color: #ffffffc7;
-          transition: 150ms all ease;
-        }
+      &:hover {
+        background-color: #ffffffc7;
+        transition: 150ms all ease;
       }
     }
   }
+}
 
 .fullTable {
   width: 100%;
@@ -2548,4 +2500,3 @@ legend {
     text-shadow: none !important;
   }
 }
-

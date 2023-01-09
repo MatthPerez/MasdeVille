@@ -129,7 +129,7 @@ class Members
         return $this;
     }
 
-    public function getBapt(): ?string 
+    public function getBapt(): ?string
     {
         return $this->bapt;
     }

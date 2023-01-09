@@ -98,51 +98,14 @@ main h1 {
   }
 }
 
-.bg-joyaux {
-  background-color: #d9d9d9;
-  color: black;
+.vcm {
+  padding: 1em;
+  background-color: #0000008e;
   border-radius: 10px;
-  padding: 10px;
-}
-
-.bg-appl {
-  background-color: #f8cbad;
-  color: black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.bg-viechr {
-  background-color: #c65911;
-  color: black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.pred_title {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 1em 0;
-  background-image: url(../medias/backgrounds/predic01.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-@media screen and (max-width: 768px) {
-  .pred_title {
-    background-image: url(../medias/backgrounds/lonely_house02.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-  }
-}
-
-.pred_title h1 {
-  -webkit-animation: 2s slideDown ease;
-          animation: 2s slideDown ease;
-  text-align: right;
-  padding-top: 1em;
-  margin-right: 1em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  color: white;
+  margin-bottom: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,75 +113,48 @@ main h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-width: 300px;
 }
 
-@media screen and (max-width: 768px) {
-  .pred_title h1 {
-    color: white;
+@media screen and (max-width: 1200px) {
+  .vcm {
+    width: 80%;
   }
 }
 
-.prgm-list {
-  width: 50vw;
-  margin-left: 25vw;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 2em;
-  background-color: #42123e;
+.vcm section {
+  margin-bottom: 3em;
+  width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .prgm-list {
-    width: 80vw;
-    margin-left: 10vw;
-  }
-}
-
-.prgm-list .vcm h2 {
-  font-size: 1rem;
-  margin: 3em 0 1em 0;
+.vcm h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
 }
 
-.prgm-list .vcm h2,
-.prgm-list .vcm div,
-.prgm-list .vcm span,
-.prgm-list .vcm div span {
-  font-size: 1rem;
+.vcm h2 span {
+  font-size: 1.5rem;
 }
 
-.prgm-list .vcm h2,
-.prgm-list .vcm div {
-  color: white;
+.vcm img {
+  height: 40px;
+  margin-bottom: 2em;
 }
 
-@media screen and (max-width: 768px) {
-  .prgm-list .vcm {
-    font-size: 0.8rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .prgm-list .vcm h2,
-  .prgm-list .vcm div,
-  .prgm-list .vcm span,
-  .prgm-list .vcm div span {
-    font-size: 0.9rem;
-  }
-}
-
-.prgm-list .vcm div {
-  text-align: left;
+.vcm div {
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,21 +163,38 @@ main h1 {
           justify-content: space-between;
 }
 
-.prgm-list .we h3 {
-  margin: 1em 0;
-  font-size: 1.2rem;
+.vcm div div {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
-.prgm-list .we h3 span:nth-child(1) {
+.jewels {
+  background-color: #5a575d;
+}
+
+.appl {
+  background-color: #be8900;
+}
+
+.cl {
+  background-color: #7e0024;
+}
+
+.jewels,
+.appl,
+.cl {
   color: white;
-}
-
-.prgm-list .we div {
-  margin-bottom: 10px;
-}
-
-.prgm-list .we div span:nth-child(1) {
-  color: white;
+  text-transform: uppercase;
+  padding: 5px;
 }
 
 .prgm {
@@ -731,6 +684,7 @@ main h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {

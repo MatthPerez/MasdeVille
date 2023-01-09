@@ -14,17 +14,23 @@ class Vcm
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type: Types::DATETIME_MUTABLE)]
-    private ?\DateTimeInterface $date = null;
+    #[ORM\Column(type: Types::DATE_MUTABLE)]
+    private ?\DateTimeInterface $meeting_date = null;
 
     #[ORM\Column(length: 255)]
     private ?string $portion = null;
 
-    #[ORM\Column(length: 100)]
+    #[ORM\Column(length: 255)]
     private ?string $president = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $advisor = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $prayer1 = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $prayer2 = null;
 
     #[ORM\Column]
     private ?int $song1 = null;
@@ -34,12 +40,6 @@ class Vcm
 
     #[ORM\Column]
     private ?int $song3 = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $prayer1 = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $prayer2 = null;
 
     #[ORM\Column(length: 255)]
     private ?string $jewels_title = null;
@@ -57,6 +57,18 @@ class Vcm
     private ?string $reader2 = null;
 
     #[ORM\Column(length: 255)]
+    private ?string $appl1 = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $appl2 = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $appl3 = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $appl4 = null;
+
+    #[ORM\Column(length: 255)]
     private ?string $appl11 = null;
 
     #[ORM\Column(length: 255, nullable: true)]
@@ -68,58 +80,58 @@ class Vcm
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $appl14 = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $appl21 = null;
-
+    
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $appl22 = null;
 
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $appl23 = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $appl24 = null;
 
     #[ORM\Column(length: 255)]
     private ?string $appl31 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl32 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl33 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl34 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl41 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl42 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl43 = null;
 
-    #[ORM\Column(length: 255, nullable: true)]
+    #[ORM\Column(length: 255)]
     private ?string $appl44 = null;
 
     #[ORM\Column(length: 255)]
     private ?string $cl1 = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $cl1_speaker = null;
-
-    #[ORM\Column(length: 255)]
     private ?string $cl2 = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $cl2_speaker = null;
-
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $cl3 = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $cl1_speaker = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $cl2_speaker = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $cl3_speaker = null;
 
     #[ORM\Column(length: 255)]
@@ -133,14 +145,14 @@ class Vcm
         return $this->id;
     }
 
-    public function getDate(): ?\DateTimeInterface
+    public function getMeetingDate(): ?\DateTimeInterface
     {
-        return $this->date;
+        return $this->meeting_date;
     }
 
-    public function setDate(\DateTimeInterface $date): self
+    public function setMeetingDate(\DateTimeInterface $meeting_date): self
     {
-        $this->date = $date;
+        $this->meeting_date = $meeting_date;
 
         return $this;
     }
@@ -181,6 +193,30 @@ class Vcm
         return $this;
     }
 
+    public function getPrayer1(): ?string
+    {
+        return $this->prayer1;
+    }
+
+    public function setPrayer1(string $prayer1): self
+    {
+        $this->prayer1 = $prayer1;
+
+        return $this;
+    }
+
+    public function getPrayer2(): ?string
+    {
+        return $this->prayer2;
+    }
+
+    public function setPrayer2(string $prayer2): self
+    {
+        $this->prayer2 = $prayer2;
+
+        return $this;
+    }
+
     public function getSong1(): ?int
     {
         return $this->song1;
@@ -213,30 +249,6 @@ class Vcm
     public function setSong3(int $song3): self
     {
         $this->song3 = $song3;
-
-        return $this;
-    }
-
-    public function getPrayer1(): ?string
-    {
-        return $this->prayer1;
-    }
-
-    public function setPrayer1(string $prayer1): self
-    {
-        $this->prayer1 = $prayer1;
-
-        return $this;
-    }
-
-    public function getPrayer2(): ?string
-    {
-        return $this->prayer2;
-    }
-
-    public function setPrayer2(string $prayer2): self
-    {
-        $this->prayer2 = $prayer2;
 
         return $this;
     }
@@ -301,6 +313,54 @@ class Vcm
         return $this;
     }
 
+    public function getAppl1(): ?string
+    {
+        return $this->appl1;
+    }
+
+    public function setAppl1(string $appl1): self
+    {
+        $this->appl1 = $appl1;
+
+        return $this;
+    }
+
+    public function getAppl2(): ?string
+    {
+        return $this->appl2;
+    }
+
+    public function setAppl2(string $appl2): self
+    {
+        $this->appl2 = $appl2;
+
+        return $this;
+    }
+
+    public function getAppl3(): ?string
+    {
+        return $this->appl3;
+    }
+
+    public function setAppl3(string $appl3): self
+    {
+        $this->appl3 = $appl3;
+
+        return $this;
+    }
+
+    public function getAppl4(): ?string
+    {
+        return $this->appl4;
+    }
+
+    public function setAppl4(?string $appl4): self
+    {
+        $this->appl4 = $appl4;
+
+        return $this;
+    }
+
     public function getAppl11(): ?string
     {
         return $this->appl11;
@@ -354,7 +414,7 @@ class Vcm
         return $this->appl21;
     }
 
-    public function setAppl21(string $appl21): self
+    public function setAppl21(?string $appl21): self
     {
         $this->appl21 = $appl21;
 
@@ -390,7 +450,7 @@ class Vcm
         return $this->appl24;
     }
 
-    public function setAppl24(string $appl24): self
+    public function setAppl24(?string $appl24): self
     {
         $this->appl24 = $appl24;
 
@@ -414,7 +474,7 @@ class Vcm
         return $this->appl32;
     }
 
-    public function setAppl32(?string $appl32): self
+    public function setAppl32(string $appl32): self
     {
         $this->appl32 = $appl32;
 
@@ -426,7 +486,7 @@ class Vcm
         return $this->appl33;
     }
 
-    public function setAppl33(?string $appl33): self
+    public function setAppl33(string $appl33): self
     {
         $this->appl33 = $appl33;
 
@@ -438,7 +498,7 @@ class Vcm
         return $this->appl34;
     }
 
-    public function setAppl34(?string $appl34): self
+    public function setAppl34(string $appl34): self
     {
         $this->appl34 = $appl34;
 
@@ -450,7 +510,7 @@ class Vcm
         return $this->appl41;
     }
 
-    public function setAppl41(?string $appl41): self
+    public function setAppl41(string $appl41): self
     {
         $this->appl41 = $appl41;
 
@@ -462,7 +522,7 @@ class Vcm
         return $this->appl42;
     }
 
-    public function setAppl42(?string $appl42): self
+    public function setAppl42(string $appl42): self
     {
         $this->appl42 = $appl42;
 
@@ -474,7 +534,7 @@ class Vcm
         return $this->appl43;
     }
 
-    public function setAppl43(?string $appl43): self
+    public function setAppl43(string $appl43): self
     {
         $this->appl43 = $appl43;
 
@@ -486,7 +546,7 @@ class Vcm
         return $this->appl44;
     }
 
-    public function setAppl44(?string $appl44): self
+    public function setAppl44(string $appl44): self
     {
         $this->appl44 = $appl44;
 
@@ -505,18 +565,6 @@ class Vcm
         return $this;
     }
 
-    public function getCl1Speaker(): ?string
-    {
-        return $this->cl1_speaker;
-    }
-
-    public function setCl1Speaker(string $cl1_speaker): self
-    {
-        $this->cl1_speaker = $cl1_speaker;
-
-        return $this;
-    }
-
     public function getCl2(): ?string
     {
         return $this->cl2;
@@ -529,26 +577,38 @@ class Vcm
         return $this;
     }
 
-    public function getCl2Speaker(): ?string
-    {
-        return $this->cl2_speaker;
-    }
-
-    public function setCl2Speaker(string $cl2_speaker): self
-    {
-        $this->cl2_speaker = $cl2_speaker;
-
-        return $this;
-    }
-
     public function getCl3(): ?string
     {
         return $this->cl3;
     }
 
-    public function setCl3(string $cl3): self
+    public function setCl3(?string $cl3): self
     {
         $this->cl3 = $cl3;
+
+        return $this;
+    }
+
+    public function getCl1Speaker(): ?string
+    {
+        return $this->cl1_speaker;
+    }
+
+    public function setCl1Speaker(?string $cl1_speaker): self
+    {
+        $this->cl1_speaker = $cl1_speaker;
+
+        return $this;
+    }
+
+    public function getCl2Speaker(): ?string
+    {
+        return $this->cl2_speaker;
+    }
+
+    public function setCl2Speaker(?string $cl2_speaker): self
+    {
+        $this->cl2_speaker = $cl2_speaker;
 
         return $this;
     }
@@ -558,7 +618,7 @@ class Vcm
         return $this->cl3_speaker;
     }
 
-    public function setCl3Speaker(string $cl3_speaker): self
+    public function setCl3Speaker(?string $cl3_speaker): self
     {
         $this->cl3_speaker = $cl3_speaker;
 

@@ -60906,6 +60906,10 @@ html {
   color: purple;
 }
 
+.f-lightPurple {
+  color: #c59cc5;
+}
+
 .f-larger {
   font-size: 1.5rem;
 }
@@ -61281,70 +61285,6 @@ nav div {
   margin-bottom: 20px;
   text-align: center;
   color: white;
-}
-
-.vcm h2 {
-  font-size: 1.2rem;
-  margin: 3em 0 1em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.vcm h2,
-.vcm div,
-.vcm span,
-.vcm div span {
-  font-size: 1.2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .vcm {
-    font-size: 1rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .vcm h2,
-  .vcm div,
-  .vcm span,
-  .vcm div span {
-    font-size: 0.9rem;
-  }
-}
-
-.vcm div {
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.we div {
-  margin-bottom: 2em;
-}
-
-.we div span:nth-child(2) {
-  color: yellow;
-}
-
-.we h3 {
-  margin-bottom: 2em;
-}
-
-.we h3 span:nth-child(2) {
-  color: lightgreen;
 }
 
 a {

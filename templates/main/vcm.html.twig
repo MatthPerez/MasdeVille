@@ -8,9 +8,188 @@
 	<main class="bg-night{{ (date() | date('m'))+0 }}">
 		<h1 class="neon">Réunions semaine</h1>
 
-    {% for meeting in vcm %}
-        <p>{{ meeting.date }}</p>
-    {% endfor %}
+		{% for meeting in vcm %}
+			{% if meeting.meetingDate | date('d-m-Y') >= "now" | date('d-m-Y') %}
+				<section class="vcm">
+					<h2>
+						<span>Réunion du
+							{{ meeting.meetingDate | date('d-m-Y') }}</span>
+						<span>|</span>
+						<span class="f-lightPurple">{{ meeting.portion }}</span>
+					</h2>
+
+					<img src="{{ asset('medias/icons/seperate1.png') }}" alt="separation">
+
+					<section>
+						<div class="f-light-green">Président :
+							{{ meeting.president }}
+						</div>
+
+						{% if meeting.advisor != null %}
+							<div>Conseiller salle secondaire :
+								<span class="f-orange">{{ meeting.advisor }}</span>
+							</div>
+						{% endif %}
+
+						<div class="f-light-blue">Cantique n°{{ meeting.song1 }}</div>
+
+						<div>
+							<span>Prière :</span>
+							<span class="f-yellow">{{ meeting.prayer1 }}</span>
+						</div>
+
+						<div>Paroles d'introduction (1 min)</div>
+					</section>
+
+					<section>
+						<div>
+							<span class="jewels">Joyaux de la Parole de Dieu</span>
+							{% if meeting.advisor != null %}
+								<span>Salle secondaire</span>
+								<span>Salle principale</span>
+							{% endif %}
+						</div>
+
+						<div>
+							<span>{{ meeting.jewelsTitle }}</span>
+							<span class="f-yellow">{{ meeting.jewelsSpeaker }}</span>
+						</div>
+
+						<div>
+							<span>Perles spirituelles (10 min)</span>
+							<span class="f-yellow">{{ meeting.pearls }}</span>
+						</div>
+
+						<div>
+							<span>Lecture de la Bible</span>
+							<span class="f-orange">{{ meeting.reader2 }}</span>
+							<span class="f-yellow">{{ meeting.reader1 }}</span>
+						</div>
+					</section>
+
+					<section>
+						<div>
+							<span class="appl">Applique-toi au ministère</span>
+							{% if meeting.advisor != null %}
+								<span>Salle secondaire</span>
+								<span>Salle principale</span>
+							{% endif %}
+						</div>
+						<div>
+							<span>{{ meeting.appl1 }}</span>
+							<span class="f-orange">{{ meeting.appl13 }}
+								{% if meeting.appl14 != null %}
+									/
+									{{ meeting.appl14 }}
+								{% endif %}
+							</span>
+							<span class="f-yellow">{{ meeting.appl11 }}
+								{% if meeting.appl12 != null %}
+									/
+									{{ meeting.appl12 }}
+								{% else %}
+									Vidéo
+								{% endif %}
+							</span>
+						</div>
+
+						<div>
+							<span>{{ meeting.appl2 }}</span>
+							<span class="f-orange">{{ meeting.appl23 }}
+								{% if meeting.appl24 != null %}
+									/
+									{{ meeting.appl24 }}
+								{% endif %}
+							</span>
+							<span class="f-yellow">{{ meeting.appl21 }}
+								{% if meeting.appl22 != null %}
+									/
+									{{ meeting.appl22 }}
+								{% endif %}
+							</span>
+						</div>
+
+						<div>
+							<span>{{ meeting.appl3 }}</span>
+							<span class="f-orange">{{ meeting.appl33 }}
+								{% if meeting.appl34 != null %}
+									/
+									{{ meeting.appl34 }}
+								{% endif %}
+							</span>
+							<span class="f-yellow">{{ meeting.appl31 }}
+								{% if meeting.appl32 != null %}
+									/
+									{{ meeting.appl32 }}
+								{% endif %}
+							</span>
+						</div>
+
+						<div>
+							<span>{{ meeting.appl4 }}</span>
+							<span class="f-orange">{{ meeting.appl44 }}
+								{% if meeting.appl44 != null %}
+									/
+									{{ meeting.appl44 }}
+								{% endif %}
+							</span>
+							<span class="f-yellow">{{ meeting.appl41 }}
+								{% if meeting.appl42 != null %}
+									/
+									{{ meeting.appl42 }}
+								{% endif %}
+							</span>
+						</div>
+					</section>
+
+					<section>
+						<div>
+							<span class="cl">Vie chrétienne</span>
+						</div>
+
+						<div class="f-light-blue">Cantique n°{{ meeting.song2 }}</div>
+
+						<div>
+							<span>{{ meeting.cl1 }}</span>
+							<span class="f-yellow">{{ meeting.cl1Speaker }}</span>
+						</div>
+
+						{% if meeting.cl2 != null %}
+							<div>
+								<span>{{ meeting.cl2 }}</span>
+								<span class="f-yellow">{{ meeting.cl2Speaker }}</span>
+							</div>
+						{% endif %}
+
+						{% if meeting.cl3 != null %}
+							<div>
+								<span>{{ meeting.cl3 }}</span>
+								<span class="f-yellow">{{ meeting.cl3Speaker }}</span>
+							</div>
+						{% endif %}
+
+						<div>
+							<span>Etude biblique de l'assemblée</span>
+							<span>Conducteur / Lecteur</span>
+							<span class="f-yellow">
+								{{ meeting.studySpeaker }}
+								/
+								{{ meeting.studyReader }}
+							</span>
+						</div>
+					</section>
+
+					<section>
+						<div>Paroles de conclusion (3 min)</div>
+						<div class="f-light-blue">Cantique n°{{ meeting.song3 }}</div>
+						<div>
+							<span>Prière finale :</span>
+							<span class="f-yellow">{{ meeting.prayer2 }}</span>
+						</div>
+					</section>
+				</section>
+			{% endif %}
+
+		{% endfor %}
 	</main>
 {% endblock %}
-

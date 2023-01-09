@@ -8,7 +8,10 @@
 	<main class="bg-plant{{ (date() | date('m'))+0 }}">
 		<h1 class="neon">Ajouter un membre à l'assemblée</h1>
 
-
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <input type="submit">
+        {{ form_end(form) }}
 	</main>
 {% endblock %}
 
